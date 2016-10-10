@@ -1,0 +1,60 @@
+# Site wide configuration
+
+title: 제이키의 MVC 이야기
+locale: kr_KR
+description: 웹 개발은 MVC 패턴으로. Angular와 ASP.NET Core의 궁합은?
+logo: site-logo.gif
+search: true
+url: http://blog.jakeymvc.com
+comments: true
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Jake Ryu
+  avatar: jake-ryu-photo.jpg
+  email: jakeymvc@gmail.com
+  disqus-shortname: jakeymvcblog
+  twitter: #username
+  facebook: ryu.jihyung
+  github: jakeymvc
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics: UA-54850641-2
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
