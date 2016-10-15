@@ -2,7 +2,7 @@
 
 title: 제이키의 MVC 이야기
 locale: kr_KR
-description: 웹 개발은 MVC 패턴으로. Angular와 ASP.NET Core의 궁합은?
+description: Angular 2 + ASP.NET Core MVC
 logo: site-logo.gif
 search: true
 url: http://blog.jakeymvc.com
