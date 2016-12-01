@@ -89,11 +89,18 @@ Custom Action Result를 구현하기 위해서는 `ActionResult` 클래스를 �
 
 ### 커맨드 패턴
 
-전체 과정을 보면 컨트롤러에서는 어떤 행동(반환값)이 필요한지 결정하여 그 행동을 구현한 객체에 실행을 위임하고 있다. `ActionResult` 클래스가 갖는 중요한 의미는 `ExecuteResult` 메서드를 강제화하여 프레임워크에서 호출될 수 있도록 할 뿐이다. 
+전체 과정을 보면 컨트롤러에서는 어떤 행동(반환값)이 필요한지 결정하여 그 행동을 구현한 객체에 실행을 위임하고 있다. 
+
+```csharp
+return new XMLResult(vmApplicants);
+```
+
+`ActionResult` 클래스가 갖는 중요한 의미는 `ExecuteResult` 메서드를 강제화하여 프레임워크에서 호출될 수 있도록 할 뿐이다. 
 
 이렇게 개별 행동을 하나의 명령 객체로 설계하면 명령을 결정하는 부분과 명령을 실행하는 부분을 분리할 수 있어 명령 추가가 쉽다. `XMLResult`를 추가하는 것이 이렇게 쉬운 이유는 `ActionResult`가 커맨드 패턴을 따른 덕이다.   
 
-###CSVResult###
+### CSVResult
+
 이번에는 데이터 교환용으로 많이 사용하고 엑셀에서 열어볼 수 있는 csv 포맷을 반환하는 Custom Action Result를 작성해 보자.  
 
 
