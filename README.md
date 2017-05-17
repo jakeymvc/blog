@@ -1,6 +1,6 @@
-# blog.jakeymvc.com source
+# blog.jakeymvc.com
 
-Blog of Jake Ryu, powered by Jekyll using the So Simple Theme.
+Blog source of blog.jakeymvc.com powered by Jekyll using the So Simple Theme.
 
 ## Build process
 1. Set url in _config.yml
